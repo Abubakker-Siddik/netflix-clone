@@ -13,7 +13,16 @@ html {
 body {
     font-family: 'Poppins', 'Arial', sans-serif;
     color: white;
+    background-color: black;
 
+}
+
+/* -----extra----- */
+.seperation{
+    width: 100%;
+    height: 0.2rem;
+    background-color: darkgrey;
+    margin-top: 11px;
 }
 
 /* -----background image----- */
@@ -31,7 +40,7 @@ body {
 .bg-setting {
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
     z-index: 0;
@@ -63,6 +72,7 @@ body {
     width: 15rem;
 
 
+
 }
 
 .nav-links {
@@ -81,11 +91,12 @@ body {
     color: white;
     border-radius: 4px;
     font-weight: 600;
+    box-shadow: none;
 
 }
 
-.nav-button button{
-     min-width: auto;
+.nav-button button {
+    min-width: auto;
     width: auto;
     height: 30px;
     padding: 0.5rem;
@@ -97,10 +108,270 @@ body {
     border: none;
     font-weight: 600;
     transition: opacity 500ms;
+    box-shadow: none;
 }
 
-.nav-button :hover{
+.nav-button :hover {
     cursor: pointer;
     opacity: 0.8;
 
+}
+
+
+
+/* -----hero section----- */
+.main-hero-section {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero-field {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    grid-template-areas: "input button";
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+
+/* -----hero components----- */
+.hero-title {
+    font-size: 5.2rem;
+    font-weight: 800;
+
+}
+
+.hero-sub-title {
+    font-size: 1.9rem;
+    font-weight: 600;
+
+}
+
+.hero-para {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+
+}
+
+.hero-field input {
+    grid-area: input;
+    width: 100%;
+    height: 5rem;
+    padding: 0.8rem;
+    background-color: rgba(17, 16, 16, 0.6);
+    color: white;
+    border: 1px solid rgb(168, 167, 167);
+    
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-field button {
+    grid-area: button;
+    width: 100%;
+    height: 5rem;
+    padding: 0.8rem;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    border: none;
+    transition: opacity 500ms;
+}
+
+.hero-field button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* -----content section----- */
+.content-1{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+
+.content-text{
+    max-width: 480px;
+}
+
+.content-text :first-child{
+    font-size: 4rem;
+}
+
+.content-text :nth-child(2){
+    font-size: 1.8rem;
+}
+
+.content-visual{
+    position: relative;
+}
+
+.content-visual img{
+   position: relative;
+   z-index: 5;
+    width: 50rem;
+}
+
+.content-video{
+    position: absolute;
+    top: 74px;
+    left: 55px;
+    width: 38rem;
+}
+
+.content-video2{
+    position: absolute;
+   top: 61px;
+    left: 55px;
+  
+}
+
+ .content-visual .tv-img2{
+    height: 35rem;
+}
+
+/* ------user questions section----- */
+.root-qsn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin: auto;
+    
+}
+
+.questions-container h1{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.user-questions .qsn{
+    height: 6rem;
+    background-color: rgba(50, 50, 50, 1);
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    justify-content: space-between;
+    padding-right: 2rem;
+    width: 1000px;
+   
+}
+
+.ionicon{
+    width: 3rem;
+}
+
+/* -----final field----- */
+.qsn-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.field{
+    display: flex;
+    
+}
+
+.qsn-field h1{
+    font-size: 2rem;
+    
+}
+
+.field input{
+     background-color: rgba(17, 16, 16, 0.6);
+    color: white;
+    border: 1px solid rgb(168, 167, 167);
+    width: 350px;
+    height: 50px;
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 2rem;
+    position: relative;
+    z-index: 1;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.field button{
+     padding: 0.8rem;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    border: none;
+    transition: opacity 500ms;
+}
+
+
+.field button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* -----footer section----- */
+.footer{
+    width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5rem 0 ;
+    justify-items: center;
+    align-items: center;
+    text-decoration: underline;
+    grid-template-areas: "box1 box2 box3 box4";
+    font-size: 1.5rem;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.box1{
+    grid-area: box1;
+}
+
+.box2{
+    grid-area: box2;
+}
+
+.box3{
+    grid-area: box3;
+}
+
+.box4{
+    grid-area: box4;
 }
